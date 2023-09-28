@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <style>
+      #divSuperior {
+        background-color: #bbbbbb;
+      }
+      #divMedio {
+        background-color: #f0c2a0;
+      }
+      #divInferior {
+        background-color: #b57f7f;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FOLLA DE INSCRICION NOS CICLOS FORMATIVOS DE GRAO SUPERIOR</h1>
+    <form action="post">
+      <div id="divSuperior">
+        <h3>Datos personais</h3>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" />
+        <label for="apelidos">Apelidos:</label>
+        <input type="text" name="apelidos" />
+        <label for="dni">DNI:</label>
+        <input type="text" name="dni" />
+        <label for="localidade">Localidade:</label>
+        <input type="text" name="localidade" />
+        <label for="provincia">Provincia</label>
+        <select name="provincia">
+          <option value="A Coruña">A Coruña</option>
+          <option value="Ourense">Ourense</option>
+          <option value="Lugo">Lugo</option>
+          <option value="Pontevedra">Pontevedra</option>
+        </select>
+        <label for="nacemento">Data de nacemento:</label>
+        <input type="date" name="nacemento" />
+        <label for="enderezo">Enderezo</label>
+        <input type="text" name="enderezo" />
+        <label for="codigoPostal">Código postal:</label>
+        <input type="text" name="codigoPostal" />
+      </div>
+      <div id="divMedio">
+        <h3>Forma de acceso</h3>
+        <input type="radio" name="acceso" value="directo" id="directo" />
+        <label for="directo">Directo</label>
+        <input type="radio" name="acceso" value="probaLibre" id="probaLibre" />
+        <label for="probaLibre">Proba libre</label>
+      </div>
+      <div id="divInferior"></div>
+    </form>
+  </body>
+</html>
