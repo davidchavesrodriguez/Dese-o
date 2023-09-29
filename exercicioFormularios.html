@@ -50,10 +50,42 @@
         <h3>Forma de acceso</h3>
         <input type="radio" name="acceso" value="directo" id="directo" />
         <label for="directo">Directo</label>
+        <ul style="list-style: none">
+          <li>
+            <input type="radio" name="directo" value="bacharelato" />Bacharelato
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="directo"
+              value="experimental"
+            />Experimental
+          </li>
+          <li>
+            <input type="radio" name="directo" value="cou" />COU
+            <input type="text" />
+          </li>
+          <li><input type="radio" name="directo" value="fp2" />FP2</li>
+          <li>
+            <input type="radio" name="directo" value="outras" />Outras
+            <input type="text" />
+          </li>
+        </ul>
         <input type="radio" name="acceso" value="probaLibre" id="probaLibre" />
         <label for="probaLibre">Proba libre</label>
       </div>
-      <div id="divInferior"></div>
+      <div id="divInferior">
+        <h3>Documentos Xuntados</h3>
+        <input type="checkbox" name="dni" />
+        <label for="dni">Fotocopia DNI</label>
+        <input type="checkbox" name="certificado" />
+        <label for="dni">Certificado académico</label> <br />
+        <input type="checkbox" name="outros" />
+        <label for="dni"
+          >Outros documentos(Especifique: <input type="text" /> )</label
+        >
+      </div>
+      <input type="submit" value="Enviar Isamel" />
     </form>
   </body>
 </html>
