@@ -8,11 +8,20 @@
       #divSuperior {
         background-color: #bbbbbb;
       }
+      #divSuperior * {
+        margin: 5px;
+      }
       #divMedio {
         background-color: #f0c2a0;
       }
+      #divMedio * {
+        margin-left: 10px;
+      }
       #divInferior {
         background-color: #b57f7f;
+      }
+      #divInferior * {
+        margin: 5px;
       }
       h1 {
         text-align: center;
@@ -30,6 +39,7 @@
         <input type="text" name="apelidos" />
         <label for="dni">DNI:</label>
         <input type="text" name="dni" />
+        <br />
         <label for="localidade">Localidade:</label>
         <input type="text" name="localidade" />
         <label for="provincia">Provincia</label>
@@ -41,6 +51,7 @@
         </select>
         <label for="nacemento">Data de nacemento:</label>
         <input type="date" name="nacemento" />
+        <br />
         <label for="enderezo">Enderezo</label>
         <input type="text" name="enderezo" />
         <label for="codigoPostal">Código postal:</label>
@@ -53,6 +64,7 @@
         <ul style="list-style: none">
           <li>
             <input type="radio" name="directo" value="bacharelato" />Bacharelato
+            <input type="text" />
           </li>
           <li>
             <input
@@ -85,7 +97,7 @@
           >Outros documentos(Especifique: <input type="text" /> )</label
         >
       </div>
-      <input type="submit" value="Enviar Isamel" />
+      <input type="submit" value="Enviar couso" />
     </form>
   </body>
 </html>
