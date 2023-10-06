@@ -1,0 +1,114 @@
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffbf7d;
+}
+
+.container {
+  background-color: #ffdebc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.navbar img {
+  margin: 0 10px;
+  height: 33px;
+}
+
+/* Contenido principal */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #ffbf7d;
+}
+
+.main-content h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Tabla central */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-self: flex-start;
+  margin-left: 20px;
+}
+
+#fotoUbi {
+  margin-left: 30px;
+}
+
+#fotoNos {
+  margin-left: 20px;
+}
+
+.table-item {
+  text-align: center;
+}
+
+.table-item h4 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.table-item img {
+  height: 100px;
+}
+
+/* Div central */
+.central-container {
+  display: flex;
+  flex-direction: row;
+  /*MIRAR ESTO*/
+}
+
+.central-container img {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.table-item {
+  position: relative;
+}
+
+.table-item h4 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  margin: 0;
+}
+
+.table-item img {
+  display: block;
+}
+.table-item:nth-child(2) img {
+  width: 150px;
+  height: auto;
+}
