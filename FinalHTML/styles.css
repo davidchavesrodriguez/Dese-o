@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body {
+  background-color: #ffbf7d;
+}
 /* Estilo para el contenedor principal */
 .container {
   display: flex;
@@ -16,12 +21,16 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: -30px;
+  margin-left: 900px;
+  background-color: #ffdebc;
+  border: #ffdebc solid 10px;
+  border-radius: 50px;
 }
 
 /* Estilo para las imágenes de la barra de navegación */
 .navbar img {
-  width: 50px; /* Ajusta el tamaño según tu preferencia */
+  width: 50px;
   height: auto;
 }
 
@@ -30,20 +39,31 @@
   width: fit-content;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
+  align-items: end;
+  justify-content: center;
+  margin-left: 150px;
+  margin-top: -310px;
+  background-color: #ffdebc;
+  border-radius: 25px;
+}
+
+/* Estilo para los elementos internos del central-container */
+.central-container > * {
+  margin: 15px;
+  margin-bottom: 10px;
 }
 
 /* Estilo para las imágenes en el central container */
 .central-container img {
-  width: 100px; /* Ajusta el tamaño según tu preferencia */
+  width: 100px;
   height: auto;
+  border: #be6839 solid 1px;
 }
 
 /* Estilo para los títulos de los elementos en el central container */
 .central-container h3 {
   font-size: 18px;
-  margin-top: 10px; /* Espacio entre la imagen y el título */
+  margin-top: 10px;
 }
 
 /* Estilo para el contenedor de la tabla */
@@ -52,25 +72,57 @@
   flex-direction: column;
   align-items: flex-start;
   margin-top: 20px;
+  margin-right: 600px;
 }
 
 /* Estilo para los elementos de la tabla */
 .table-item {
   position: relative;
   margin-bottom: 10px;
+  border: #ffdebc solid 5px;
 }
 
 /* Estilo para las imágenes en los elementos de la tabla */
 .table-item img {
-  width: 100px; /* Ajusta el tamaño según tu preferencia */
+  width: 100px;
   height: auto;
 }
 
 /* Estilo para los textos superpuestos en los elementos de la tabla */
 .table-item h4 {
   position: absolute;
-  top: 50%; /* Coloca el texto en el centro verticalmente */
-  left: 50%; /* Coloca el texto en el centro horizontalmente */
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Alfa Slab One';
+  color: #f2eddb;
+  -webkit-text-stroke: 0.5px black;
+}
+
+h2 {
+  background-color: #ffdebc;
+  margin-top: 30px;
+  margin-left: 180px;
+  width: 50%;
+  border: #be6839 solid 1px;
+}
+
+h1 {
+  background-color: #ffdebc;
+  border: #be6839 solid 3px;
+  border-radius: 50px;
+  padding: 20px;
+  border-top: none;
+  border-bottom: none;
+}
+
+.central-container #imaxeTarta {
+  width: 90px;
 }
