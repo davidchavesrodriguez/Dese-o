@@ -1,11 +1,23 @@
+/*TABLA*/
 table, th, td{
     border: solid black 1px;
     border-collapse: collapse;
 }
 
 /*PARA HISTORIA*/
-tr:nth-of-type(3) td:last-of-type{
+tr:nth-of-type(4) td:last-of-type{
     font-size: 2em;
+}
+
+input[type="button"]{
+    background-color: white; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+
+}
+input[type="button"]:hover{
+    box-shadow: 1px 1px 1px gray;
+
 }
 
 /* Empregando únicamente pseudoselectores da coor de fondo verde ás celas que conteñe horas */
@@ -41,8 +53,18 @@ tr:first-of-type th:last-of-type:hover, td:last-of-type:hover {
 }
 
 /* Empregando Pseudoelementos fai que a primeira letra dos días teña o dobre de tamaño*/
-
+tr:first-of-type th::first-letter{
+    font-size: 2em;
+}
 
 /* Engade un borde vermello que esté separado 5 px aos campos obrigatorios */
+input[name="destino"]{
+    border: red solid 1px;
+    padding: 5px;
+}
 
 /* Engade un * en vermello detrás das etiquetas */
+label::after{
+    content: "*";
+    color: red;
+}
