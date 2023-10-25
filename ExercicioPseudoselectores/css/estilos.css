@@ -1,0 +1,48 @@
+table, th, td{
+    border: solid black 1px;
+    border-collapse: collapse;
+}
+
+/*PARA HISTORIA*/
+tr:nth-of-type(3) td:last-of-type{
+    font-size: 2em;
+}
+
+/* Empregando únicamente pseudoselectores da coor de fondo verde ás celas que conteñe horas */
+td:first-of-type {
+    background-color: green;
+}
+
+/* Empregando únicamente pseudoselectores da cor de fondo amarelo á cela de recreo */
+tr:nth-of-type(3) th{
+    background-color: yellow;
+}
+
+/* Cambiar ls estado das ligazóns para que:
+ Nunca estén subliñados */
+ a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+ }
+ 
+ /*Se están visitados amósanse en vermello*/
+ a:visited {
+    color: red;
+ }
+
+ /*Se no están visitados amósanse en verde */
+ a:link{
+    color: green;
+ }
+
+/* Empregando pseudoselectores facer que cando pasemos o rato sobre a columna do venres
+aumente o tamaño de letra ao dobre */
+tr:first-of-type th:last-of-type:hover, td:last-of-type:hover {
+    font-size: 2em;
+}
+
+/* Empregando Pseudoelementos fai que a primeira letra dos días teña o dobre de tamaño*/
+
+
+/* Engade un borde vermello que esté separado 5 px aos campos obrigatorios */
+
+/* Engade un * en vermello detrás das etiquetas */
