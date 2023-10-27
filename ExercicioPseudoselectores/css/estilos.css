@@ -4,11 +4,6 @@ table, th, td{
     border-collapse: collapse;
 }
 
-/*PARA HISTORIA*/
-tr:nth-of-type(4) td:last-of-type{
-    font-size: 2em;
-}
-
 input[type="button"]{
     background-color: white; 
     border-radius: 5px;
@@ -26,7 +21,7 @@ td:first-of-type {
 }
 
 /* Empregando únicamente pseudoselectores da cor de fondo amarelo á cela de recreo */
-tr:nth-of-type(3) th{
+tr:nth-of-type(3){
     background-color: yellow;
 }
 
@@ -58,7 +53,7 @@ tr:first-of-type th::first-letter{
 }
 
 /* Engade un borde vermello que esté separado 5 px aos campos obrigatorios */
-input[name="destino"]{
+:required{
     border: red solid 1px;
     padding: 5px;
 }
