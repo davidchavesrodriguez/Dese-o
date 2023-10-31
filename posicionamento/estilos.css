@@ -3,21 +3,49 @@ body{
 }
 
 #greenDiv{
-    width: 1000px;
-    color: #93EB94;
-    
+    width: 100%;
+    background-color: #93EB94;  
+    display: flex; 
+
 }
 
-div{
+figure{
     background-color: white;
-    width: 250px;
-    display: flex;
-    justify-content: space-evenly;
+    padding: 10px;
+    width: fit-content;
+    border: black 1px solid;
+    border-radius: 7%;
+    margin: 0 -50px;
+}
+
+figure:first-of-type{
+    transform: rotate(333deg);
+    z-index: 5;
+}
+
+figure:nth-of-type(2){
+    transform: rotate(40deg);
+    z-index: 4;
+}
+
+figure:nth-of-type(3){
+    transform: rotate(350deg);
+    z-index: 3;
+}
+
+figure:nth-of-type(4){
+    transform: rotate(20deg);
+    z-index: 2;
+}
+
+figcaption{
+    text-align: center;
 }
 
 img{
-    width: 200px;
+    width: 180px;
 }
+
 img[src="profile.png"]{
     width: 90px;
 }
@@ -27,8 +55,5 @@ header{
     display: flex;
     justify-content: space-evenly;
     color: white;
-}
-
-aside{
-    borde
+    position: sticky;
 }
