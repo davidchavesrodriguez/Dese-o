@@ -1,0 +1,35 @@
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'sidebar content content'
+    'sidebar  footer  footer';
+  gap: 10px;
+  width: 20%;
+  margin: auto;
+  padding: 10px;
+}
+
+.header {
+  grid-area: header;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.content {
+  grid-area: content;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 10px;
+  border: 1px solid black;
+}
