@@ -1,9 +1,10 @@
 .wrapper {
   display: grid;
-  grid-template-rows: repeat(3, 33%);
-  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   width: 30%;
+  max-width: 333px;
   margin: auto;
   text-align: center;
   grid-auto-flow: column;
