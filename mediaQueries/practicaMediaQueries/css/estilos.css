@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    font-family: "Righteous";
+}
+.verde{
+    color: green;
+}
+
+.main_text{
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hidden{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    img{
+        width: 6rem;
+    }
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+}
+
+@media screen and (min-width: 992px) {
+}
