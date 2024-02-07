@@ -14,36 +14,77 @@
 
   <body>
     <div class="container-fluid">
-      <!-- Header -->
-      <div class="row">
-        <nav class="navbar navbar-expand-lg text-white">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="#"
-                  ><img src="./logo.png" alt=""
-                /></a>
-                <a class="nav-link" href="#">Inicio</a>
-                <a class="nav-link" href="#">Novas</a>
-                <a class="nav-link" href="#">Nós</a>
-                <a class="nav-link" href="#">Contacto</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
+      <!-- Nav -->
+      <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <a href="#" class="navbar-brand"
+          ><img src="logo.png" alt="Logo Paxina" width="32"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Novas</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Últimas Novas</a></li>
+                <li><a href="#" class="dropdown-item">Novas Destacadas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Nos</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">A Empresa</a></li>
+                <li><a href="#" class="dropdown-item">Traballa con nós</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contacto
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Onde estamos?</a></li>
+                <li><a class="dropdown-item" href="#">Servizo ao cliente</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <button type="button" class="btn btn-primary">Identifíquese</button>
+          <button type="button" class="btn btn-primary">Rexistro</button>
+        </div>
+      </nav>
       <!-- Carrusel -->
       <div class="row"></div>
       <!-- Cursos Ofertados -->
