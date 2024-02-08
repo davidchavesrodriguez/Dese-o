@@ -75,7 +75,9 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Onde estamos?</a></li>
-                <li><a class="dropdown-item" href="#">Servizo ao cliente</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Servizo ao cliente</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -85,72 +87,90 @@
           <button type="button" class="btn btn-primary">Rexistro</button>
         </div>
       </nav>
+
       <!-- Carrusel -->
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            mx-3
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="c1.jpg" class="d-block w-100" alt="imagen 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="c2.jpg" class="d-block w-100" alt="imagen 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="c3.jpg" class="d-block w-100" alt="imagen 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="c4.jpg" class="d-block w-100" alt="imagen 4" />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="src/c1.jpg" class="d-block w-100" alt="imagen 1" />
-          </div>
-          <div class="carousel-item">
-            <img src="src/c2.jpg" class="d-block w-100" alt="imagen 2" />
-          </div>
-          <div class="carousel-item">
-            <img src="src/c3.jpg" class="d-block w-100" alt="imagen 3" />
-          </div>
-          <div class="carousel-item">
-            <img src="src/c4.jpg" class="d-block w-100" alt="imagen 4" />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="col-1"></div>
       </div>
       <!-- Cursos Ofertados -->
       <div class="row text-white text-center bg-dark">
-        <div class="col">Cursos Ofertados</div>
+        <div class="col"><h1>Cursos Ofertados</h1></div>
       </div>
       <!-- Cards -->
       <div class="row row-cols-1 row-cols-md-3 text-center">
@@ -205,49 +225,152 @@
       </div>
       <!-- Queres falar con nós? -->
       <div class="row text-white text-center bg-dark">
-        <div class="col">Queres falar con nós?</div>
+        <div class="col"><h1>Queres falar con nós?</h1></div>
       </div>
       <!-- Formulario -->
-       <!-- Selector de opción -->
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col">
+          <div role="tabpanel">
+            <!-- List group -->
+            <div class="list-group" id="myList" role="tablist">
+              <a
+                class="list-group-item list-group-item-action active"
+                data-bs-toggle="list"
+                href="#contactar"
+                role="tab"
+                >Contactar</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                data-bs-toggle="list"
+                href="#sugerencia"
+                role="tab"
+                >Sugerencia</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                data-bs-toggle="list"
+                href="#empresas"
+                role="tab"
+                >Empresas</a
+              >
+            </div>
 
-    <ul class="list-group mt-2">
-      <li class="list-group-item active" aria-current="true">Contactar</li>
-      <li class="list-group-item">Suxerencia</li>
-      <li class="list-group-item">Empresas</li>
-    </ul>
-
-    <!-- Formulario -->
-
-    <form>
-      <label for="email" class="form-label">Email: </label>
-      <input
-        type="email"
-        class="form-control"
-        id="email"
-        placeholder="Introduce o teu correo"
-      />
-      <label for="email" class="form-label">O teu problema: </label>
-      <textarea
-        name="problema"
-        id="problemaTextarea"
-        rows="5"
-        class="form-control"
-      ></textarea>
-
-      <div class="d-flex justify-content-end">
-        <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="contactar" role="tabpanel">
+                <div class="col">
+                  <form>
+                    <label for="email" class="form-label">Email: </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Introduce o teu correo"
+                    />
+                    <label for="email" class="form-label"
+                      >O teu problema:
+                    </label>
+                    <textarea
+                      name="problema"
+                      id="problemaTextarea"
+                      rows="5"
+                      class="form-control"
+                    ></textarea>
+                    <div class="d-flex justify-content-end">
+                      <button type="submit" class="btn btn-primary mt-2">
+                        Enviar
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="tab-pane" id="sugerencia" role="tabpanel">
+                <form>
+                  <label for="email" class="form-label">Email: </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Introduce o teu correo"
+                  />
+                  <label for="email" class="form-label"
+                    >A tua suxerencia:
+                  </label>
+                  <textarea
+                    name="problema"
+                    id="problemaTextarea"
+                    rows="5"
+                    class="form-control"
+                  ></textarea>
+                  <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary mt-2">
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="empresas" role="tabpanel">
+                <form>
+                  <label for="nomeEmpresa" class="form-label"
+                    >Nome da empresa:
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="nomeEmpresa"
+                    id="nomeEmpresa"
+                  />
+                  <label for="email" class="form-label">Email: </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Introduce o teu correo"
+                  />
+                  <label for="email" class="form-label">Coméntanos </label>
+                  <textarea
+                    name="problema"
+                    id="problemaTextarea"
+                    rows="5"
+                    class="form-control"
+                  ></textarea>
+                  <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary mt-2">
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </form>
       <!-- Footer -->
       <div class="row text-white text-center bg-dark">
-        <div class="col">Acabouse a páxina</div>
+        <div class="col">
+          <p><i>Acabouse a páxina ©</i></p>
+        </div>
       </div>
     </div>
+    <div
+      class="alert alert-warning alert-dismissible fade show sticky-bottom"
+      role="alert"
+    >
+      <strong>Aviso de Cookies</strong> Galletas!
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-    defer
-  ></script>
 </html>
