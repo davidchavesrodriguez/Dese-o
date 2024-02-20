@@ -1,0 +1,26 @@
+/*Paleta de cores*/
+$primaryColor: #997090;
+$hoverColor: #FFFFFF;
+
+/*Estilos do NAV*/
+
+.container {
+    nav {
+        background-color: $primaryColor;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            li {
+                margin: 5%;
+
+                &:hover {
+                    color: $hoverColor;
+                }
+            }
+        }
+    }
+}
