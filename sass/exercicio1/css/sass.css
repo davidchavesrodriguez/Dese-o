@@ -1,0 +1,35 @@
+/*Estilos do NAV*/
+nav {
+  background-color: #997090;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+nav ul .active {
+  color: #FFFFFF;
+}
+nav ul li {
+  margin: 2%;
+}
+nav ul li:hover {
+  color: #FFFFFF;
+}
+
+/*Estilo das FIGURE*/
+figure {
+  width: 33%;
+  padding: 2%;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+figure img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+/*# sourceMappingURL=sass.css.map */
