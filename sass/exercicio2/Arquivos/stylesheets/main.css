@@ -1,10 +1,11 @@
-/* Error: Undefined mixin.
- *   ,
- * 8 |     @include bg-covertint($r_deep-blue, $g_deep-blue, $b_deep-blue, $r_light-blue, $g_light-blue, $b_light-blue, $alpha_cover, $cover_picture);
- *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   sass/_landing.scss 8:5  @import
- *   sass/main.scss 4:9      root stylesheet */
+/* Error: Undefined variable.
+ *    ,
+ * 19 |         -o-linear-gradient(rgba($r-from, $g-from, $b-from, $alpha), rgba($r- to, $g-to, $b-to, $alpha)), url($imgurl) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment);
+ *    |                                                                          ^^^
+ *    '
+ *   sass/_mixins.scss 19:74  bg-covertint()
+ *   sass/_landing.scss 8:5   @import
+ *   sass/main.scss 4:9       root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 8 \2502      @include bg-covertint($r_deep-blue, $g_deep-blue, $b_deep-blue, $r_light-blue, $g_light-blue, $b_light-blue, $alpha_cover, $cover_picture);\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/_landing.scss 8:5  @import\a   sass/main.scss 4:9      root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 19 \2502          -o-linear-gradient(rgba($r-from, $g-from, $b-from, $alpha), rgba($r- to, $g-to, $b-to, $alpha)), url($imgurl) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment);\a    \2502                                                                           ^^^\a    \2575 \a   sass/_mixins.scss 19:74  bg-covertint()\a   sass/_landing.scss 8:5   @import\a   sass/main.scss 4:9       root stylesheet";
 }
