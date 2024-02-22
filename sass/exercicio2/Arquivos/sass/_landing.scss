@@ -1,0 +1,11 @@
+.content {
+    position: relative;
+    border-top: 50%;
+    transform: translateY(-50%);
+}
+
+#section-1 {
+    @include bg-covertint($r_deep-blue, $g_deep-blue, $b_deep-blue, $r_light-blue, $g_light-blue, $b_light-blue, $alpha_cover, $cover_picture);
+    width: 100vh;
+    color: $pure-white;
+}
