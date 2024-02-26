@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Asignamos estilos aos botóns */
+.btn.btn-error {
+  background-color: #fe0000;
+  display: inline;
+  padding: 1%;
+  width: 10%;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.btn.btn-warning {
+  background-color: #f1f177;
+  display: inline;
+  padding: 1%;
+  width: 10%;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.btn.btn-accepted {
+  background-color: #388d00;
+  display: inline;
+  padding: 1%;
+  width: 10%;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.btn.btn-normal {
+  background-color: #006fff;
+  display: inline;
+  padding: 1%;
+  width: 10%;
+  border-radius: 10%;
+  text-align: center;
+}
+
+/* Estilos das tablas */
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  width: 20%;
+}
+
+table tr td:nth-child(1) {
+  background-color: lightslategray;
+}
+
+table tr td:nth-child(2) {
+  background-color: lightgray;
+}
+
+table tr td:nth-child(3) {
+  background-color: lightslategray;
+}
+
+table tr td:nth-child(4) {
+  background-color: lightgray;
+}
+
+/* Estilo das columnas */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row .col-1 {
+  width: 10%;
+  height: 7em;
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row .col-2 {
+  width: 20%;
+  height: 7em;
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row .col-3 {
+  width: 30%;
+  height: 7em;
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row .col-4 {
+  width: 40%;
+  height: 7em;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=main.css.map */

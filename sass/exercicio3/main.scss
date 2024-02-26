@@ -1,0 +1,63 @@
+// Mapa de cores dos botóns
+$buttonColors: (error: #fe0000,
+    warning: #f1f177,
+    accepted: #388d00,
+    normal: #006fff);
+
+/* Asignamos estilos aos botóns */
+@each $color,
+$value in $buttonColors {
+    .btn.btn-#{$color} {
+        background-color: $value;
+        display: inline;
+        padding: 1%;
+        width: 10%;
+        border-radius: 10%;
+        text-align: center;
+    }
+}
+
+/* Estilos das tablas */
+table,
+tr,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td {
+    width: 20%;
+}
+
+@for $i from 1 through 4 {
+    table {
+        tr {
+            td:nth-child(#{$i}) {
+                @if $i % 2==0 {
+                    background-color: lightgray;
+                }
+
+                @else {
+                    background-color: lightslategray;
+                }
+            }
+        }
+    }
+}
+
+/* Estilo das columnas */
+
+@for $i from 1 through 4 {
+    .row {
+        display: flex;
+        flex-direction: row;
+
+        .col-#{$i} {
+            width: calc(10%*$i);
+            height: 7em;
+            border: 1px solid black;
+        }
+    }
+}
